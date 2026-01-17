@@ -24,7 +24,7 @@ const Footer = () => {
 
                         <div className="flex flex-col items-center md:items-end gap-8">
                             {/* 3D Sphere Social Icons */}
-                            <div className="flex gap-8 perspective-500">
+                            <div className="flex flex-wrap justify-center gap-4 md:gap-8 perspective-500">
                                 {[
                                     { icon: <FaGithub />, href: "https://github.com/deepthi314", color: "from-[#333] to-black" },
                                     { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/deepthi-kumar-2474ab321", color: "from-[#0077b5] to-[#004182]" },
@@ -36,7 +36,7 @@ const Footer = () => {
                                         href={social.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className={`w-14 h-14 rounded-full bg-gradient-to-br ${social.color} flex items-center justify-center text-white text-2xl shadow-[0_10px_20px_rgba(0,0,0,0.5),inset_2px_2px_5px_rgba(255,255,255,0.4),inset_-2px_-2px_5px_rgba(0,0,0,0.4)] hover:scale-110 hover:-translate-y-2 hover:rotate-12 transition-all duration-300 relative group`}
+                                        className={`w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br ${social.color} flex items-center justify-center text-white text-xl md:text-2xl shadow-[0_10px_20px_rgba(0,0,0,0.5),inset_2px_2px_5px_rgba(255,255,255,0.4),inset_-2px_-2px_5px_rgba(0,0,0,0.4)] hover:scale-110 hover:-translate-y-2 hover:rotate-12 transition-all duration-300 relative group`}
                                     >
                                         <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 animate-pulse-slow"></div>
                                         {social.icon}

@@ -31,7 +31,6 @@ Styling: CSS / Custom styles
 Package Manager: npm
 
 Deployment Ready: Vercel / Netlify / GitHub Pages
-
 📁 Project Structure
 ├── index.html        # Entry HTML file
 ├── src/
@@ -43,6 +42,7 @@ Deployment Ready: Vercel / Netlify / GitHub Pages
 ├── public/           # Public assets
 ├── package.json      # Project dependencies
 └── vite.config.js    # Vite configuration
+
 
 ▶️ Getting Started
 

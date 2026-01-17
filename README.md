@@ -30,19 +30,6 @@ Styling: CSS / Custom styles
 
 Package Manager: npm
 
-Deployment Ready: Vercel / Netlify / GitHub Pages
-📁 Project Structure
-├── index.html        # Entry HTML file
-├── src/
-│   ├── main.jsx      # React entry point
-│   ├── App.jsx       # Main application component
-│   ├── components/   # Reusable UI components
-│   ├── assets/       # Images and static files
-│   └── styles/       # CSS files
-├── public/           # Public assets
-├── package.json      # Project dependencies
-└── vite.config.js    # Vite configuration
-
 
 ▶️ Getting Started
 

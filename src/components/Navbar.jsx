@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Link } from 'react-scroll';
 import { FaGithub } from 'react-icons/fa';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
@@ -90,15 +91,15 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu Portal */}
             <AnimatePresence>
-                {isOpen && (
+                {isOpen && createPortal(
                     <motion.div
                         initial={{ opacity: 0, x: '100%' }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ duration: 0.4, ease: "circOut" }}
-                        className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center md:hidden border-l border-white/10"
+                        className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center border-l border-white/10"
                     >
                         <ul className="flex flex-col items-center gap-10">
                             {navLinks.map((link, index) => (
@@ -134,8 +135,21 @@ const Navbar = () => {
                                     <span>GitHub Profile</span>
                                 </a>
                             </motion.li>
+
+                            {/* Close Button Inside Menu */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.6 }}
+                                className="absolute top-6 right-6 md:hidden"
+                            >
+                                <button onClick={() => setIsOpen(false)} className="text-white text-4xl hover:text-neon-lime transition-colors">
+                                    <HiX />
+                                </button>
+                            </motion.div>
                         </ul>
-                    </motion.div>
+                    </motion.div>,
+                    document.body
                 )}
             </AnimatePresence>
         </nav>

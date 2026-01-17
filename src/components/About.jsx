@@ -70,10 +70,10 @@ const About = () => {
                     <div className="w-full lg:w-7/12">
                         {/* Section Heading - Extruded Text */}
                         <div className="mb-12 relative group">
-                            <h2 className="text-5xl md:text-6xl font-bold font-heading text-white relative z-10 text-shadow-neon">
+                            <h2 className="text-4xl md:text-6xl font-bold font-heading text-white relative z-10 text-shadow-neon">
                                 About Me
                             </h2>
-                            <h2 className="text-5xl md:text-6xl font-bold font-heading text-electric-blue absolute top-1 left-1 -z-10 opacity-50 blur-[1px]">
+                            <h2 className="text-4xl md:text-6xl font-bold font-heading text-electric-blue absolute top-1 left-1 -z-10 opacity-50 blur-[1px]">
                                 About Me
                             </h2>
                             <div className="h-2 w-32 bg-gradient-to-r from-neon-lime via-electric-blue to-hot-magenta mt-4 rounded-full shadow-neon-blue"></div>

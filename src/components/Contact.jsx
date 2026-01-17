@@ -59,11 +59,11 @@ const Contact = () => {
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-5xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
+                        className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
                     >
                         Let's Connect
                     </motion.h2>
-                    <p className="text-xl text-text-secondary">Have a project idea? Let's build something amazing!</p>
+                    <p className="text-lg md:text-xl text-text-secondary">Have a project idea? Let's build something amazing!</p>
                 </div>
 
                 {/* Massive Holographic Form Card */}
@@ -76,7 +76,7 @@ const Contact = () => {
                     {/* Rotating Gradient Border */}
                     <div className="absolute -inset-[3px] rounded-[30px] bg-gradient-to-r from-neon-lime via-electric-blue to-hot-magenta opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow"></div>
 
-                    <div className="relative bg-[#1c2333]/90 backdrop-blur-2xl p-8 md:p-12 rounded-[28px] shadow-[0_30px_100px_rgba(0,0,0,0.8)] border border-white/10 transform-style-3d overflow-hidden">
+                    <div className="relative bg-[#1c2333]/90 backdrop-blur-2xl p-6 md:p-12 rounded-[28px] shadow-[0_30px_100px_rgba(0,0,0,0.8)] border border-white/10 transform-style-3d overflow-hidden">
 
                         {/* Holographic Scanline Overlay */}
                         <div className="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(255,255,255,0.03)_50%,transparent_100%)] bg-[size:100%_4px] pointer-events-none z-0"></div>

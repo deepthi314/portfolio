@@ -98,7 +98,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ duration: 0.4, ease: "circOut" }}
-                        className="fixed inset-0 bg-space-black/95 backdrop-blur-2xl z-40 flex flex-col items-center justify-center md:hidden border-l border-white/10"
+                        className="fixed inset-0 bg-space-black/98 backdrop-blur-2xl z-[150] flex flex-col items-center justify-center md:hidden border-l border-white/10"
                     >
                         <ul className="flex flex-col items-center gap-10">
                             {navLinks.map((link, index) => (

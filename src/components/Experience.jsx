@@ -15,7 +15,7 @@ const Experience = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
+                        className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
                     >
                         Experience
                     </motion.h2>
@@ -28,7 +28,7 @@ const Experience = () => {
                         <div className="absolute top-0 left-0 w-full h-32 bg-white/50 blur-md animate-float-slow opacity-70"></div>
                     </div>
 
-                    <div className="ml-24 md:ml-32 space-y-24">
+                    <div className="ml-12 md:ml-32 space-y-24">
 
                         {/* OSCODE Experience Card - MASSIVE BLOCK */}
                         <motion.div
@@ -43,7 +43,7 @@ const Experience = () => {
                             <div className="absolute top-10 -left-20 w-4 h-6 bg-neon-lime rounded-full shadow-neon-lime z-10"></div>
 
                             {/* Main Card */}
-                            <div className="bg-[#1c2333] p-10 rounded-[30px] border-2 border-white/5 transition-all duration-500 transform-style-3d hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)] hover:border-electric-blue group-hover:rotate-x-2 group-hover:translate-z-20">
+                            <div className="bg-[#1c2333] p-6 md:p-10 rounded-[30px] border-2 border-white/5 transition-all duration-500 transform-style-3d hover:shadow-[0_25px_80px_rgba(0,0,0,0.6)] hover:border-electric-blue group-hover:rotate-x-2 group-hover:translate-z-20">
 
                                 {/* 3D Floating Logo */}
                                 <div className="absolute -top-12 -right-8 w-32 h-32 bg-[#0a0e27] rounded-3xl flex items-center justify-center border-2 border-electric-blue shadow-neon-blue transform translate-z-40 group-hover:translate-z-60 group-hover:rotate-[-10deg] transition-all duration-500">

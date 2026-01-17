@@ -22,7 +22,7 @@ const Hero = () => {
     return (
         <section
             id="hero"
-            className="w-full h-screen relative flex items-center justify-center overflow-hidden bg-space-black perspective-2000"
+            className="w-full min-h-screen relative flex items-center justify-center overflow-hidden bg-space-black perspective-2000 py-20 md:py-0"
             onMouseMove={handleMouseMove}
         >
             {/* Background Layers */}
@@ -67,9 +67,9 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.2 }}
                     className="relative mb-6 transform-style-3d"
                 >
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-heading text-white leading-tight tracking-tighter">
-                        <span className="block text-4xl md:text-5xl lg:text-6xl font-normal mb-2 text-text-muted">Hi, I'm</span>
-                        <div className="relative inline-block text-3d-massive bg-clip-text text-transparent bg-full-spectrum animate-float">
+                    <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold font-heading text-white leading-tight tracking-tighter">
+                        <span className="block text-2xl md:text-5xl lg:text-6xl font-normal mb-2 text-text-muted">Hi, I'm</span>
+                        <div className="relative inline-block text-3d-massive-sm md:text-3d-massive bg-clip-text text-transparent bg-full-spectrum animate-float">
                             DEEPTHI P KUMAR
                         </div>
                     </h1>
@@ -80,7 +80,7 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="text-xl md:text-2xl text-text-secondary font-light tracking-wide mb-10 flex flex-wrap justify-center items-center gap-4"
+                    className="text-lg md:text-2xl text-text-secondary font-light tracking-wide mb-10 flex flex-wrap justify-center items-center gap-2 md:gap-4"
                 >
                     <span className="hover:text-electric-blue transition-colors">Frontend Developer</span>
                     <span className="w-2 h-2 rounded-full bg-neon-lime shadow-neon-lime animate-pulse" />
@@ -94,7 +94,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col md:flex-row items-center gap-8"
+                    className="flex flex-col md:flex-row items-center gap-6 md:gap-8"
                 >
                     {/* Primary Button */}
                     <Link
@@ -139,7 +139,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 1 }}
-                className="absolute bottom-12 z-20"
+                className="absolute bottom-4 md:bottom-12 z-20"
             >
                 <Link to="about" smooth={true} offset={-50} className="cursor-pointer flex flex-col items-center gap-2 group">
                     <span className="text-xs uppercase tracking-widest text-text-muted group-hover:text-neon-lime transition-colors">Scroll</span>

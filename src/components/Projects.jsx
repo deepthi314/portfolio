@@ -70,16 +70,16 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Section Heading */}
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 md:mb-20">
                     <motion.h2
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-5xl md:text-6xl font-bold font-heading text-white mb-4 text-3d-massive"
+                        className="text-4xl md:text-6xl font-bold font-heading text-white mb-4 text-3d-massive"
                     >
                         Featured Work
                     </motion.h2>
-                    <p className="text-xl text-text-muted">Explore my digital creations</p>
+                    <p className="text-lg md:text-xl text-text-muted">Explore my digital creations</p>
                 </div>
 
                 {/* 3D Floating Tabs */}
@@ -140,11 +140,11 @@ const Projects = () => {
                                         />
 
                                         {/* Overlay with Floating Buttons */}
-                                        <div className="absolute inset-0 bg-space-black/80 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                        <div className="absolute inset-0 bg-space-black/80 flex items-center justify-center gap-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                                             {project.link !== "#" && (
                                                 <a
                                                     href={project.link}
-                                                    className="px-6 py-2 bg-neon-lime text-space-black font-bold rounded-lg shadow-neon-lime transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500 delay-100 hover:scale-110 flex items-center gap-2"
+                                                    className="px-6 py-2 bg-neon-lime text-space-black font-bold rounded-lg shadow-neon-lime transform translate-y-0 md:translate-y-10 group-hover:translate-y-0 transition-transform duration-500 delay-100 hover:scale-110 flex items-center gap-2"
                                                 >
                                                     Demo <FaExternalLinkAlt />
                                                 </a>
@@ -152,7 +152,7 @@ const Projects = () => {
                                             {project.github && project.github !== "#" && (
                                                 <a
                                                     href={project.github}
-                                                    className="px-6 py-2 bg-electric-blue text-space-black font-bold rounded-lg shadow-neon-blue transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500 delay-200 hover:scale-110 flex items-center gap-2"
+                                                    className="px-6 py-2 bg-electric-blue text-space-black font-bold rounded-lg shadow-neon-blue transform translate-y-0 md:translate-y-10 group-hover:translate-y-0 transition-transform duration-500 delay-200 hover:scale-110 flex items-center gap-2"
                                                 >
                                                     Code <FaGithub />
                                                 </a>

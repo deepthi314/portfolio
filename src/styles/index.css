@@ -21,10 +21,15 @@
 }
 
 @layer base {
+
+  html,
   body {
     @apply bg-[#0a0e27] text-white font-sans overflow-x-hidden selection:bg-[#39ff14] selection:text-[#0a0e27];
     perspective: 1500px;
     /* Global perspective for 3D */
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   h1,

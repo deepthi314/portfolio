@@ -51,11 +51,11 @@ const Skills = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
+                        className="text-4xl md:text-7xl font-bold font-heading text-white mb-6 text-3d-massive"
                     >
                         Skills & Expertise
                     </motion.h2>
-                    <p className="text-xl text-text-secondary">Building the future with modern technologies</p>
+                    <p className="text-lg md:text-xl text-text-secondary">Building the future with modern technologies</p>
                 </div>
 
                 <div className="flex flex-col gap-20">
@@ -107,7 +107,7 @@ const Skills = () => {
                                                 <div className={`text-5xl ${skill.color} drop-shadow-md transition-all duration-500 group-hover:scale-125 group-hover:rotate-[-45deg]`}>
                                                     {skill.icon}
                                                 </div>
-                                                <span className="mt-2 text-xs font-bold text-gray-300 group-hover:text-white uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
+                                                <span className="mt-2 text-xs font-bold text-gray-300 md:group-hover:text-white uppercase tracking-wider opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
                                                     {skill.name}
                                                 </span>
                                             </div>

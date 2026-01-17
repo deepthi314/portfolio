@@ -46,7 +46,7 @@ const Education = () => {
                         transition={{ duration: 0.8 }}
                         className="inline-block relative z-10"
                     >
-                        <h2 className="text-5xl md:text-6xl font-bold font-heading text-white mb-2 text-3d-massive">
+                        <h2 className="text-4xl md:text-6xl font-bold font-heading text-white mb-2 text-3d-massive">
                             Education Journey
                         </h2>
                         {/* Floating decorative shapes around text */}

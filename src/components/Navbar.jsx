@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { createPortal } from 'react-dom';
 import { Link } from 'react-scroll';
 import { FaGithub } from 'react-icons/fa';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
@@ -27,11 +26,11 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-[100] transition-all duration-500 transform-style-3d ${scrolled
+            className={`fixed w-full z-[100] transition-all duration-500 ${!isOpen && 'transform-style-3d'} ${scrolled
                 ? 'bg-[#1c2333]/85 backdrop-blur-[20px] shadow-3d-lg border-b border-neon-lime/30 translate-z-50 py-3'
                 : 'bg-transparent py-5'
                 }`}
-            style={{ transform: scrolled ? 'translateZ(100px)' : 'translateZ(0)' }}
+            style={{ transform: (!isOpen && scrolled) ? 'translateZ(100px)' : 'none' }}
         >
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
                 {/* Logo */}
@@ -91,16 +90,18 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu Portal */}
+            {/* Mobile Menu */}
             <AnimatePresence>
-                {isOpen && createPortal(
+                {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, x: '100%' }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ duration: 0.4, ease: "circOut" }}
-                        className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center border-l border-white/10"
+                        className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center md:hidden"
+                        style={{ transform: 'none', perspective: 'none' }}
                     >
+                        {/* Remove transform-style-3d from parent nav via JS or just enforce high z-index here */}
                         <ul className="flex flex-col items-center gap-10">
                             {navLinks.map((link, index) => (
                                 <motion.li
@@ -148,8 +149,7 @@ const Navbar = () => {
                                 </button>
                             </motion.div>
                         </ul>
-                    </motion.div>,
-                    document.body
+                    </motion.div>
                 )}
             </AnimatePresence>
         </nav>

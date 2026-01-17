@@ -107,7 +107,7 @@ const Skills = () => {
                                                 <div className={`text-4xl md:text-5xl ${skill.color} drop-shadow-md transition-all duration-500 group-hover:scale-125 group-hover:rotate-[-45deg]`}>
                                                     {skill.icon}
                                                 </div>
-                                                <span className="mt-1 md:mt-2 text-[10px] md:text-xs font-bold text-gray-300 md:group-hover:text-white uppercase tracking-wider opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
+                                                <span className="mt-1 md:mt-2 text-[10px] md:text-xs font-bold text-gray-300 md:group-hover:text-white uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
                                                     {skill.name}
                                                 </span>
                                             </div>

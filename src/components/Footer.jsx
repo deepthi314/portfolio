@@ -10,11 +10,11 @@ const Footer = () => {
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 transition-transform hover:scale-[1.01] duration-500">
                 {/* 3D Elevated Platform */}
-                <div className="bg-[#0a0e27] border-t-4 border-electric-blue rounded-t-[50px] shadow-[0_-20px_60px_rgba(0,180,216,0.1)] p-12 md:p-20 transform-style-3d hover:translate-y-[-10px] transition-transform duration-500">
+                <div className="bg-[#0a0e27] border-t-4 border-electric-blue rounded-t-[30px] md:rounded-t-[50px] shadow-[0_-20px_60px_rgba(0,180,216,0.1)] p-6 md:p-20 transform-style-3d hover:translate-y-[-10px] transition-transform duration-500">
 
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div className="text-center md:text-left">
-                            <h2 className="text-5xl font-black font-heading text-white mb-6 tracking-tight text-3d-massive">
+                            <h2 className="text-3xl md:text-5xl font-black font-heading text-white mb-6 tracking-tight text-3d-massive">
                                 DEEPTHI<br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-lime to-electric-blue">P KUMAR</span>
                             </h2>
                             <p className="text-text-secondary text-lg max-w-md mx-auto md:mx-0">
@@ -44,7 +44,7 @@ const Footer = () => {
                                 ))}
                             </div>
 
-                            <div className="flex gap-8 text-sm font-bold tracking-widest uppercase text-text-muted">
+                            <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-xs md:text-sm font-bold tracking-widest uppercase text-text-muted">
                                 {['Home', 'About', 'Work', 'Contact'].map(link => (
                                     <Link
                                         key={link}

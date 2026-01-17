@@ -99,7 +99,7 @@ const Navbar = () => {
                         exit={{ opacity: 0, x: '100%' }}
                         transition={{ duration: 0.4, ease: "circOut" }}
                         className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center md:hidden"
-                        style={{ transform: 'none', perspective: 'none' }}
+
                     >
                         {/* Remove transform-style-3d from parent nav via JS or just enforce high z-index here */}
                         <ul className="flex flex-col items-center gap-10">

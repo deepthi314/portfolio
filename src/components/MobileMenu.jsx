@@ -21,7 +21,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: '100%' }}
                     transition={{ duration: 0.4, ease: "circOut" }}
-                    className="fixed inset-0 bg-[#050812] z-[9999] flex flex-col items-center justify-center md:hidden"
+                    className="fixed inset-0 z-[99999] flex flex-col items-center justify-center md:hidden"
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100vw',
+                        height: '100vh',
+                        backgroundColor: '#050812',
+                        zIndex: 99999,
+                        overflowY: 'auto' // Allow scrolling if content overflows
+                    }}
                 >
                     <ul className="flex flex-col items-center gap-10">
                         {navLinks.map((link, index) => (

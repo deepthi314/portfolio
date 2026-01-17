@@ -69,7 +69,7 @@ const Hero = () => {
                 >
                     <h1 className="text-4xl md:text-6xl lg:text-9xl font-bold font-heading text-white leading-tight tracking-tighter">
                         <span className="block text-2xl md:text-5xl lg:text-6xl font-normal mb-2 text-text-muted">Hi, I'm</span>
-                        <div className="relative inline-block text-3d-massive-sm md:text-3d-massive bg-clip-text text-transparent bg-full-spectrum animate-float">
+                        <div className="relative inline-block text-3d-massive-sm md:text-3d-massive text-white md:bg-clip-text md:text-transparent md:bg-full-spectrum animate-float leading-snug">
                             DEEPTHI P KUMAR
                         </div>
                     </h1>

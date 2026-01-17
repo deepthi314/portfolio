@@ -85,7 +85,7 @@ const Skills = () => {
                                             type: "spring",
                                             bounce: 0.5
                                         }}
-                                        className="relative group w-32 h-32"
+                                        className="relative group w-24 h-24 md:w-32 md:h-32"
                                     >
                                         {/* 3D Platform/Box */}
                                         <div
@@ -104,10 +104,10 @@ const Skills = () => {
                                                 I'll put the icon in a container that translates Z up.
                                             */}
                                             <div className="absolute inset-0 flex flex-col items-center justify-center transform translate-z-10 group-hover:translate-z-40 transition-transform duration-500">
-                                                <div className={`text-5xl ${skill.color} drop-shadow-md transition-all duration-500 group-hover:scale-125 group-hover:rotate-[-45deg]`}>
+                                                <div className={`text-4xl md:text-5xl ${skill.color} drop-shadow-md transition-all duration-500 group-hover:scale-125 group-hover:rotate-[-45deg]`}>
                                                     {skill.icon}
                                                 </div>
-                                                <span className="mt-2 text-xs font-bold text-gray-300 md:group-hover:text-white uppercase tracking-wider opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
+                                                <span className="mt-1 md:mt-2 text-[10px] md:text-xs font-bold text-gray-300 md:group-hover:text-white uppercase tracking-wider opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 -rotate-45">
                                                     {skill.name}
                                                 </span>
                                             </div>

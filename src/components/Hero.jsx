@@ -82,7 +82,7 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="text-lg md:text-2xl text-text-secondary font-light tracking-wide mb-10 flex flex-wrap justify-center items-center gap-2 md:gap-4"
                 >
-                    <span className="hover:text-electric-blue transition-colors">Frontend Developer</span>
+                    <span className="hover:text-electric-blue transition-colors">Full Stack Developer</span>
                     <span className="w-2 h-2 rounded-full bg-neon-lime shadow-neon-lime animate-pulse" />
                     <span className="hover:text-hot-magenta transition-colors">UI/UX Designer</span>
                     <span className="w-2 h-2 rounded-full bg-neon-lime shadow-neon-lime animate-pulse" />
